@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+body {
+    background-color: #ecf5ff !important;
+}
+
+/* 332766 */
+
+/* UTILIERS */
+
+/* font-family: 'Changa', sans-serif; */
+
+.container {
+    box-shadow: 1px 1px 10px #bedafa;
+
+}
+
+.navbar {
+    font-family: 'Changa', sans-serif;
+    font-size: 20px;
+}
+
+
+.navbar-brand img.img-size {
+    width: 120px;
+    height: 120px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #61539c !important;
+}
+
+.navbar .navbar-nav .nav-link:first-child {
+    background-color: #61539c;
+    border-radius: 13px;
+    color: #ecf5ff !important;
+}
+
+.navbar .navbar-nav .nav-link:first-child:hover {
+    box-shadow: 2px 2px 1px 4px #61539c;
+}
+
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #61539c;
+    border-radius: 13px;
+    color: #ecf5ff !important;
+    transition: 250ms ease-in-out;
+}
+
+
+header .row div.title {
+    font-family: 'Changa', sans-serif;
+    font-size: 70px;
+}
+
+header .row div.title span {
+    color: #61539c;
+}
+
+header .row div.title button.primary {
+    background-color: #61539c;
+    color: #ecf5ff;
+    box-shadow: 3px 4px 1px #bedafa;
+}
+
+header .row div.title button.primary:hover {
+    background-color: #674cd4;
+}
+
+header .row div.title button.secondary {
+    border: 1px solid #61539c;
+    color: #61539c;
+    box-shadow: 3px 4px 1px #bedafa;
+}
+
+header .row div.title button.secondary:hover {
+    background-color: #61539c;
+    color: #ecf5ff;
+}
