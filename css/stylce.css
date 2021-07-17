@@ -79,13 +79,13 @@ section h1 {
 }
 
 .navbar .navbar-nav .nav-link:first-child:hover {
-    box-shadow: 2px 2px 1px 4px #61539c;
+    background-color: rgba(94, 72, 182, 0.699);
 }
 
 
 .navbar .navbar-nav .nav-link:hover {
     background-color: #61539c;
-    border-radius: 50px;
+    border-radius: 13px;
     color: #ecf5ff !important;
 }
 
@@ -113,6 +113,20 @@ align-items: center;
     color: #999;
 }
 
+
+section button#addPostBtn {
+    background-color: #61539c;
+    color: #ecf5ff;
+    box-shadow: 3px 4px 1px #bedafa;
+}
+
+section button#addPostBtn:hover {
+    background-color: #674cd4;
+}
+
+footer .social-media {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 1200px) {
     header .title {

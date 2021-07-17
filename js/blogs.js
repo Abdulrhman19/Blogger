@@ -32,7 +32,14 @@ fetch(file)
           </div>`;
         }).join("");
 
-        postsNumber.innerHTML = `${posts.length} Posts Found`
+        getNumberOfPosts(posts);
     })
     .catch(error => console.log(`Error: ${error}`));
+
+const getNumberOfPosts = (posts) => {
+    const numberOfPostsFromLocalStorage = window.localStorage.length;
+    numberOfPostsFromLocalStorage === 0 
+    ? postsNumber.innerHTML = `${posts.length} Posts Found` 
+    : postsNumber.innerHTML = `${posts.length + numberOfPostsFromLocalStorage} Posts Found`;
+}
 

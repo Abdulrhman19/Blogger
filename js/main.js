@@ -61,19 +61,17 @@ addPostBtn.addEventListener("click", () => {
   };
 
   addPost(newPost);
+  postsTracker++;
 });
 
 const addPost = (newPost) => {
   window.localStorage.setItem(`post${postsTracker}`, JSON.stringify(newPost));
-  postsTracker++;
-  console.log(window.localStorage.length);
 
   const newTitle = (document.querySelector("#newTitle").value = "");
   const newContent = (document.querySelector("#newContent").value = "");
 };
 
 const getAllowdPosts = (posts) => {
-  console.log(posts);
   const allowdPosts = 3;
   if (window.localStorage.length === 0) {
     return posts.slice(0, allowdPosts);
