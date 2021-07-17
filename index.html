@@ -50,7 +50,13 @@
                 <a class="nav-link mx-3" href="./index.html">Home</a>
                 <a class="nav-link mx-3" href="./blogs.html">Posts</a>
                 <a class="nav-link mx-3" href="#">About</a>
-                <a class="nav-link mx-3" href="#">Contact</a>
+                <a
+                  class="nav-link mx-3"
+                  href="#contactModel"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModel"
+                  >Contact</a
+                >
               </div>
             </div>
           </div>
@@ -63,7 +69,7 @@
               <span>Blogger</span> Provides you an answer for your question
               <div>
                 <button type="button" class="btn primary btn-lg">
-                  Start Posting
+                  <a href="#createPost" style="color: #ecf5ff">Start Posting</a>
                 </button>
                 <button type="button" class="btn secondary btn-lg">
                   Learn More
@@ -141,6 +147,83 @@
         </div>
       </section>
 
+      <!-- Model -->
+      <!-- Button trigger modal -->
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+      >
+        Launch demo modal
+      </button> -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="contactModel"
+        tabindex="-1"
+        aria-labelledby="contactModelLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Get In Touch!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="username" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="user-image"
+                  placeholder="Abdulrhman"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Your Phone</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <div>
+                <p class="text-center">
+                  We'll reply to you as soon as possible
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary">Close</button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- footer -->
       <footer>
         <hr />
@@ -148,12 +231,13 @@
           copyright &copy; All rights reserved for
           <a href="https://github.com/Abdulrhman19">Abdulrhman</a>
         </div>
-        <div class="social-media d-flex justify-content-between mx-auto w-25 pb-3">
+        <div
+          class="social-media d-flex justify-content-between mx-auto w-25 pb-3"
+        >
           <div><i class="bi bi-facebook"></i></div>
           <div><i class="bi bi-instagram"></i></div>
           <div><i class="bi bi-twitter"></i></div>
           <div><i class="bi bi-linkedin"></i></div>
-
         </div>
       </footer>
     </div>

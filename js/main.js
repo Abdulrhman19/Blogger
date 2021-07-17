@@ -69,6 +69,7 @@ const addPost = (newPost) => {
 
   const newTitle = (document.querySelector("#newTitle").value = "");
   const newContent = (document.querySelector("#newContent").value = "");
+  window.open("./blogs.html");
 };
 
 const getAllowdPosts = (posts) => {
@@ -83,14 +84,14 @@ const getAllowdPosts = (posts) => {
         JSON.parse(window.localStorage.getItem("post2")),
         posts[0],
       ];
-    } else if(diff === 2) {
+    } else if (diff === 2) {
       return [
         JSON.parse(window.localStorage.getItem("post1")),
         posts[0],
         posts[1],
       ];
     }
-  } else if (window.localStorage.length > 3) {
+  } else if (window.localStorage.length >= 3) {
     return [
       JSON.parse(window.localStorage.getItem("post1")),
       JSON.parse(window.localStorage.getItem("post2")),
@@ -103,3 +104,4 @@ const getAllowdPosts = (posts) => {
 // diff = 3 - 2 === 1
 // window.localStorage.length + diff ===  3 => True, then
 // posts.slice(0, )
+

@@ -1,138 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+
+* {
+  text-decoration: none !important;
+}
 
 body {
-    background-color: #ecf5ff !important;
+  background-color: #ecf5ff !important;
 }
 
 /* 332766 */
 
 header .row div.title {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 header .row div.title span {
-    color: #61539c;
-    font-family: 'Changa', sans-serif;
-    font-size: larger;
-
+  color: #61539c;
+  font-family: "Changa", sans-serif;
+  font-size: larger;
 }
 
 header .row div.title button.primary {
-    background-color: #61539c;
-    color: #ecf5ff;
-    box-shadow: 3px 4px 1px #bedafa;
+  background-color: #61539c;
+  color: #ecf5ff;
+  box-shadow: 3px 4px 1px #bedafa;
 }
 
 header .row div.title button.primary:hover {
-    background-color: #674cd4;
+  background-color: #674cd4;
 }
 
 header .row div.title button.secondary {
-    border: 1px solid #61539c;
-    color: #61539c;
-    box-shadow: 3px 4px 1px #bedafa;
+  border: 1px solid #61539c;
+  color: #61539c;
+  box-shadow: 3px 4px 1px #bedafa;
 }
 
 header .row div.title button.secondary:hover {
-    background-color: #61539c;
-    color: #ecf5ff;
+  background-color: #61539c;
+  color: #ecf5ff;
 }
 
 section h1 {
-    font-size: 60px;
-    letter-spacing: 1px;
-    color: #444;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #444;
 }
-
 
 /* UTILIERS */
 
 /* font-family: 'Changa', sans-serif; */
 
-
-
-
 .container {
-    box-shadow: 1px 1px 10px #bedafa;
-
+  box-shadow: 1px 1px 10px #bedafa;
 }
 
 .navbar {
-    font-family: 'Changa', sans-serif;
-    font-size: 20px;
+  font-family: "Changa", sans-serif;
+  font-size: 20px;
 }
 
-
 .navbar-brand img.img-size {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #61539c !important;
+  color: #61539c !important;
 }
 
 .navbar .navbar-nav .nav-link:first-child {
-    background-color: #61539c;
-    border-radius: 13px;
-    color: #ecf5ff !important;
+  background-color: #61539c;
+  border-radius: 13px;
+  color: #ecf5ff !important;
 }
 
 .navbar .navbar-nav .nav-link:first-child:hover {
-    background-color: rgba(94, 72, 182, 0.699);
+  background-color: rgba(94, 72, 182, 0.699);
 }
-
 
 .navbar .navbar-nav .nav-link:hover {
-    background-color: #61539c;
-    border-radius: 13px;
-    color: #ecf5ff !important;
+  background-color: #61539c;
+  border-radius: 13px;
+  color: #ecf5ff !important;
 }
 
-
-.cards-wrapper .detail  {
-border-right: 1px solid rgba(153, 153, 153, 0.308);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.cards-wrapper .detail {
+  border-right: 1px solid rgba(153, 153, 153, 0.308);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-wrapper .detail img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .cards-wrapper .content .h2 {
-    color: #674cd4;
-    letter-spacing: 0.5px;
-    text-align: center;
+  color: #674cd4;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 #postsNumber {
-    color: #999;
+  color: #999;
 }
 
-
 section button#addPostBtn {
-    background-color: #61539c;
-    color: #ecf5ff;
-    box-shadow: 3px 4px 1px #bedafa;
+  background-color: #61539c;
+  color: #ecf5ff;
+  box-shadow: 3px 4px 1px #bedafa;
 }
 
 section button#addPostBtn:hover {
-    background-color: #674cd4;
+  background-color: #674cd4;
 }
 
 footer .social-media {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.active {
+  border: 1px solid #674cd4;
+  border-radius: 15px;
+}
+
+.newPostBtn {
+  background-color: #61539c;
+  color: #ecf5ff;
+  box-shadow: 3px 4px 1px #bedafa;
+  width: 120px;
+  padding: 8px;
+  text-align: center;
+}
+
+.newPostBtn > span {
+  margin-left: 3px;
+}
+
+.newPostBtn:hover {
+  background-color: #4f35b6;
+  color: #ecf5ff;
+
+}
+
+
 @media screen and (max-width: 1200px) {
-    header .title {
-        width: 100%;
-    }
-    header div img.img-fluid {
-        display: none;
-    }
+  header .title {
+    width: 100%;
+  }
+  header div img.img-fluid {
+    display: none;
+  }
 }
