@@ -19,7 +19,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
-    <title>Blogger - Home</title>
+    <title>Blogger - Posts</title>
   </head>
   <body>
     <div class="container">
@@ -55,31 +55,12 @@
             </div>
           </div>
         </nav>
-
-        <!-- Header -->
-        <div>
-          <div class="row m-4">
-            <div class="col-md-6 col-sm-12 title">
-              <span>Blogger</span> Provides you an answer for your question
-              <div>
-                <button type="button" class="btn primary btn-lg">
-                  Start Posting
-                </button>
-                <button type="button" class="btn secondary btn-lg">
-                  Learn More
-                </button>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <img src="./images/header-img-3.svg" class="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
       </header>
 
       <!-- blogs section -->
       <section>
-        <h1 class="text-center">Recent Blogs</h1>
+        <h1 class="text-center">All Blogs</h1>
+        <div id="postsNumber" class="my-4"></div>
         <div class="cards-wrapper">
           <div class="row py-4 border">
             <div class="col-md-2 detail">
@@ -114,25 +95,9 @@
         </div>
       </section>
 
-      <!-- add posts -->
-      <section id="createPost" class="w-50 mx-auto mt-4">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Post Title</label>
-          <input type="text" class="form-control" id="newTitle" placeholder="Example: react vs vue">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Post Content</label>
-          <textarea class="form-control" id="newContent" rows="3"></textarea>
-        </div>
-        <div class="col-auto text-center">
-          <button type="submit" id="addPostBtn" class="btn btn-primary mb-3">Publish</button>
-        </div>
-      </section>
-
-
     </div>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/blogs.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
